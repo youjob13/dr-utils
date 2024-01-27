@@ -1,0 +1,9 @@
+{
+  "name": "@dr-utils/formatters",
+  "version": "1.0.0",
+  "description": "Common formatters utils",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "Danil Rodionov",
+  "license": "ISC"
+}

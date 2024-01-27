@@ -1,0 +1,9 @@
+{
+  "name": "@dr-utils/date-formatters",
+  "version": "1.0.0",
+  "description": "Date formatters",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "Danil Rodionov",
+  "license": "ISC"
+}

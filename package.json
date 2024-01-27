@@ -1,0 +1,31 @@
+{
+  "name": "dr-utils",
+  "version": "1.0.0",
+  "description": "The package contains utils and helpers functions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youjob13/dr-utils.git"
+  },
+  "author": "Danil Rodionov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youjob13/dr-utils/issues"
+  },
+  "homepage": "https://github.com/youjob13/dr-utils#readme",
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "18.2.2",
+    "typescript": "5.3.3"
+  },
+  "workspaces": [
+    "packages/formatters",
+    "packages/date-formatters"
+  ]
+}
