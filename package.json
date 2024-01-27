@@ -1,5 +1,5 @@
 {
-  "name": "dr-utils",
+  "name": "@youjob13/dr-utils",
   "version": "1.0.0",
   "description": "The package contains utils and helpers functions",
   "type": "module",
@@ -8,7 +8,6 @@
     "type": "git",
     "url": "git+https://github.com/youjob13/dr-utils.git"
   },
-  "private": "true",
   "author": "Danil Rodionov",
   "license": "ISC",
   "bugs": {
