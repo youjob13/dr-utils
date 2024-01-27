@@ -2,8 +2,15 @@
   "name": "@dr-utils/date-formatters",
   "version": "1.0.0",
   "description": "Date formatters",
-  "main": "index.js",
-  "devDependencies": {},
+  "type": "module",
+  "main": "dist/index.js",
   "author": "Danil Rodionov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "1.11.10",
+    "luxon": "3.4.4"
+  },
+  "devDependencies": {
+    "@types/luxon": "3.4.2"
+  }
 }

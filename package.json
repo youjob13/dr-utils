@@ -2,7 +2,8 @@
   "name": "dr-utils",
   "version": "1.0.0",
   "description": "The package contains utils and helpers functions",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/youjob13/dr-utils.git"
@@ -26,6 +27,7 @@
   },
   "workspaces": [
     "packages/formatters",
-    "packages/date-formatters"
+    "packages/date-formatters",
+    "packages/utils"
   ]
 }

@@ -1,9 +1,6 @@
 {
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "Node",
     "sourceMap": true,
     "outDir": "dist",
     "lib": ["dom", "es6", "es2017", "es2019", "es2023"]
