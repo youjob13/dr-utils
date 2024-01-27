@@ -19,15 +19,39 @@
     "node": ">=18.0.0"
   },
   "scripts": {
+    "precommit": "npm-run-all build lint pretty",
+    "lint": "eslint .",
+    "pretty": "prettier --config .prettierrc.yml --write \"src/**.*ts\" \"packages/**/*.ts\"",
     "build": "tsc -b tsconfig.build.json"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@tsconfig/node18": "18.2.2",
+    "@typescript-eslint/eslint-plugin": "6.19.1",
+    "@typescript-eslint/parser": "6.19.1",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-unused-imports": "3.0.0",
+    "husky": "9.0.6",
+    "npm-run-all": "4.1.5",
+    "prettier": "3.2.4",
     "typescript": "5.3.3"
   },
   "workspaces": [
     "packages/formatters",
     "packages/date-formatters",
     "packages/utils"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint — fix",
+      "prettier — write",
+      "git add"
+    ]
+  }
 }

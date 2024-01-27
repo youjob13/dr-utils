@@ -1,0 +1,11 @@
+parser: typescript
+singleQuote: true
+trailingComma: all
+tabWidth: 2
+printWidth: 120
+useTabs: false
+arrowParens: avoid
+importOrder: ["^(\\.+|src)\/"]
+importOrderSeparation: true
+importOrderCaseInsensitive: true
+importOrderSortSpecifiers: true
