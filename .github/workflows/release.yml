@@ -5,7 +5,7 @@ on:
     branches:
       - master
 jobs:
-  Explore-GitHub-Actions:
+  Info:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -19,5 +19,54 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  Install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      # - name: Cache Node Modules
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: node_modules
+      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-node-
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm run test:coverage
+
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  # Lint:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Lint
+  #     - run: npm run lint
+  #     - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  # Build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+      # - name: Build
+      # - run: npm run build
+  #     - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  # Test-and-coverage:
+  #   runs-on: ubuntu-latest
+  #   steps:
+      # - name: Test
+      # - run: npm run test:coverage
+  #     - run: echo "🍏 This job's status is ${{ job.status }}."
 
 
