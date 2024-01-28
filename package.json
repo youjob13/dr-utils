@@ -21,7 +21,7 @@
   "scripts": {
     "lint": "eslint .",
     "pretty": "prettier --config .prettierrc.yml --write \"src/**.*ts\" \"packages/**/*.ts\"",
-    "test": "mocha --config=.mocharc.yaml",
+    "test": "TZ=GMT mocha --config=.mocharc.yaml",
     "test:coverage": "c8 npm run test",
     "build": "tsc -b tsconfig.build.json",
     "prepare": "husky"
