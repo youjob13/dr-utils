@@ -47,7 +47,11 @@ jobs:
         run: npm run test:coverage
 
       - name: Push new release to NPM
-        run: npm publish --access public
+        run: |
+          npm version minor --no-git-tag-version
+          NEW_VERSION=$(node -p "require('./package.json').version")
+          echo "New version: $NEW_VERSION"
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
