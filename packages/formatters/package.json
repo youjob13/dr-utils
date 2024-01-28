@@ -1,5 +1,5 @@
 {
-  "name": "@dr-utils/formatters",
+  "name": "formatters",
   "version": "1.0.0",
   "description": "Common formatters utils",
   "type": "module",

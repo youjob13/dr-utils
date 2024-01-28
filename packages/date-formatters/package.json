@@ -1,5 +1,5 @@
 {
-  "name": "@dr-utils/date-formatters",
+  "name": "date-formatters",
   "version": "1.0.0",
   "description": "Date formatters",
   "type": "module",

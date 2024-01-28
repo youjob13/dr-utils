@@ -1,5 +1,5 @@
 {
-  "name": "@youjob13/dr-utils",
+  "name": "@youjob13/utils",
   "version": "1.0.0",
   "description": "The package contains utils and helpers functions",
   "type": "module",

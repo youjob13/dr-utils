@@ -13,6 +13,6 @@
     "editor.formatOnPaste": false,
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
 }
