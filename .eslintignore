@@ -1,1 +1,9 @@
 dist/
+README.md
+.github/
+.gitignore
+.mocharc.yaml
+.npmrc
+.nycrc
+**/package.json/**
+**/package-lock.json/**
