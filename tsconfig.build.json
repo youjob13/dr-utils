@@ -2,7 +2,6 @@
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
-    { "path": "./packages/formatters" },
     { "path": "./packages/date-formatters" }
   ]
 }

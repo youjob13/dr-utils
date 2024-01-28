@@ -1,0 +1,11 @@
+extensions:
+  - ts
+spec:
+  - 'packages/**/src/**/*.spec.ts'
+ignore:
+  - '**/node_modules/**'
+reporter:
+  - progress
+node-option:
+  - experimental-specifier-resolution=node
+  - loader=ts-node/esm
