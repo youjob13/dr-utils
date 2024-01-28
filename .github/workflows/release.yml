@@ -46,7 +46,11 @@ jobs:
       - name: Test
         run: npm run test:coverage
 
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Push new release to NPM
+        run: npm publish --access public
+
+      - name: Status
+        run: echo "🍏 This job's status is ${{ job.status }}."
 
   # Lint:
   #   runs-on: ubuntu-latest
