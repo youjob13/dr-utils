@@ -1,6 +1,6 @@
 {
   "name": "@youjob13/utils",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "The package contains utils and helpers functions",
   "type": "module",
   "main": "src/index.js",
