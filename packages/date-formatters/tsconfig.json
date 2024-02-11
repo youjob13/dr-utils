@@ -5,6 +5,7 @@
     "declarationMap": true,
     "outDir": "dist"
   },
+  "exclude": ["**/*.spec.ts"],
   "references": [
     {
       "path": "../utils"
